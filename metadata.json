@@ -1,0 +1,12 @@
+{
+  "name": "Rubik's Vision Solver",
+  "description": "An AI-powered Rubik's Cube solver that uses your camera to detect faces and provides a 3D step-by-step guide to the solution.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Computer Vision",
+    "3D Visualization",
+    "AI Solving"
+  ]
+}
