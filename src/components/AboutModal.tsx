@@ -23,7 +23,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-2 sm:inset-4 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[550px] sm:max-h-[85dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl"
+            className="fixed inset-2 sm:inset-4 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[700px] sm:max-h-[90dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl"
           >
             {/* Header */}
             <div className="p-4 sm:p-8 sm:pb-4 flex justify-between items-center border-b border-white/5">
@@ -33,7 +33,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                 </div>
                 <div>
                   <h2 className="text-lg sm:text-xl font-serif text-white tracking-tight uppercase leading-none">Intelligence Briefing</h2>
-                  <p className="text-[8px] sm:text-[9px] text-accent font-black uppercase tracking-[0.2em] mt-0.5">Application Metadata</p>
+                  <p className="text-[8px] sm:text-[11px] text-accent font-black uppercase tracking-[0.2em] mt-0.5">Application Metadata</p>
                 </div>
               </div>
               <button 
@@ -50,10 +50,10 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-accent rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">The Objective</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">The Objective</h3>
                 </div>
-                <div className="bg-white/5 border border-white/5 rounded-3xl p-6 space-y-4">
-                   <p className="text-[11px] text-gray-400 leading-relaxed font-medium uppercase tracking-wider">
+                <div className="bg-white/5 border border-white/5 rounded-3xl p-6 sm:p-10 space-y-4">
+                   <p className="text-[11px] sm:text-[15px] text-gray-400 leading-relaxed font-medium uppercase tracking-wider">
                       This application helps you solve a Rubik’s Cube using your device camera or manual color input.
                    </p>
                 </div>
@@ -63,7 +63,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-accent rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">Operational Workflow</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">Operational Workflow</h3>
                 </div>
                 <ul className="space-y-3">
                   {[
@@ -72,11 +72,11 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                     "The backend solver computes the optimal solution",
                     "Step-by-step instructions are shown to solve the cube"
                   ].map((step, i) => (
-                    <li key={i} className="flex items-start gap-4 p-4 bg-white/5 border border-white/5 rounded-2xl">
-                      <div className="w-6 h-6 rounded-md bg-accent/10 flex items-center justify-center shrink-0 text-[10px] font-black text-accent border border-accent/20">
+                    <li key={i} className="flex items-start gap-4 p-4 sm:p-6 bg-white/5 border border-white/5 rounded-2xl">
+                      <div className="w-6 h-6 sm:w-10 sm:h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0 text-[10px] sm:text-base font-black text-accent border border-accent/20">
                         {i + 1}
                       </div>
-                      <p className="text-[10px] text-gray-300 font-bold uppercase tracking-widest leading-relaxed">{step}</p>
+                      <p className="text-[10px] sm:text-[13px] text-gray-300 font-bold uppercase tracking-widest leading-relaxed">{step}</p>
                     </li>
                   ))}
                 </ul>
@@ -86,7 +86,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-accent rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">Capabilities</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">Capabilities</h3>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                    {[
@@ -107,25 +107,25 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-accent rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">System Architecture</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">System Architecture</h3>
                 </div>
-                <div className="bg-white/5 border border-white/5 rounded-3xl p-6 space-y-4">
-                   <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white/5 border border-white/5 rounded-3xl p-6 sm:p-10 space-y-4">
+                   <div className="grid grid-cols-2 gap-6 sm:gap-10">
                       <div className="space-y-1">
-                         <h5 className="text-[9px] font-black text-white/30 uppercase tracking-[0.2em]">Frontend</h5>
-                         <p className="text-[10px] font-bold text-white uppercase tracking-widest">React / HTML5 / CSS3</p>
+                         <h5 className="text-[9px] sm:text-[11px] font-black text-white/30 uppercase tracking-[0.2em]">Frontend</h5>
+                         <p className="text-[10px] sm:text-[14px] font-bold text-white uppercase tracking-widest">React / HTML5 / CSS3</p>
                       </div>
                       <div className="space-y-1">
-                         <h5 className="text-[9px] font-black text-white/30 uppercase tracking-[0.2em]">3D Rendering</h5>
-                         <p className="text-[10px] font-bold text-white uppercase tracking-widest">Three.js Engine</p>
+                         <h5 className="text-[9px] sm:text-[11px] font-black text-white/30 uppercase tracking-[0.2em]">3D Rendering</h5>
+                         <p className="text-[10px] sm:text-[14px] font-bold text-white uppercase tracking-widest">Three.js Engine</p>
                       </div>
                       <div className="space-y-1">
-                         <h5 className="text-[9px] font-black text-white/30 uppercase tracking-[0.2em]">Backend</h5>
-                         <p className="text-[10px] font-bold text-white uppercase tracking-widest">FastAPI Layer</p>
+                         <h5 className="text-[9px] sm:text-[11px] font-black text-white/30 uppercase tracking-[0.2em]">Backend</h5>
+                         <p className="text-[10px] sm:text-[14px] font-bold text-white uppercase tracking-widest">FastAPI Layer</p>
                       </div>
                       <div className="space-y-1">
-                         <h5 className="text-[9px] font-black text-white/30 uppercase tracking-[0.2em]">Logic</h5>
-                         <p className="text-[10px] font-bold text-white uppercase tracking-widest">Kociemba Algorithm</p>
+                         <h5 className="text-[9px] sm:text-[11px] font-black text-white/30 uppercase tracking-[0.2em]">Logic</h5>
+                         <p className="text-[10px] sm:text-[14px] font-bold text-white uppercase tracking-widest">Kociemba Algorithm</p>
                       </div>
                    </div>
                    <div className="pt-4 border-t border-white/5">
@@ -140,7 +140,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-red-500 rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">Crucial Protocol</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">Crucial Protocol</h3>
                 </div>
                 <div className="bg-red-500/5 border border-red-500/10 rounded-3xl p-6 space-y-4">
                    <ul className="space-y-3">
@@ -162,7 +162,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                    <div className="w-1.5 h-6 bg-accent rounded-full" />
-                   <h3 className="text-sm font-black text-white uppercase tracking-widest">Lead Engineer</h3>
+                   <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-widest">Lead Engineer</h3>
                 </div>
                 <div className="bg-accent/5 border border-accent/10 rounded-3xl p-6 space-y-6">
                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
@@ -190,7 +190,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                       <div className="text-center sm:text-left">
                          <h4 className="text-lg sm:text-xl font-serif text-white tracking-tight">Harrish Yesuraj P</h4>
                          <p className="text-[9px] sm:text-[10px] text-accent font-black uppercase tracking-[0.2em] mt-1">Full Stack Developer</p>
-                         <p className="text-[8px] sm:text-[9px] text-gray-500 font-bold uppercase tracking-widest mt-2">Mission Specialist</p>
+                         <p className="text-[8px] sm:text-[9px] text-gray-500 font-bold uppercase tracking-widest mt-2">Software & AI Engineer</p>
                       </div>
                    </div>
                    
@@ -230,10 +230,10 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
 
             {/* Footer */}
             <div className="p-4 sm:p-8 pt-2 sm:pt-4 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center bg-black/20 gap-3">
-               <span className="text-[9px] sm:text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">Version 1.0</span>
+               <span className="text-[9px] sm:text-[12px] font-black text-white/20 uppercase tracking-[0.3em]">Version 1.0</span>
                <button 
                 onClick={onClose}
-                className="w-full sm:w-auto px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-black text-[9px] text-white uppercase tracking-widest transition-all"
+                className="w-full sm:w-auto px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-black text-[9px] sm:text-[13px] text-white uppercase tracking-widest transition-all"
                >
                   Close Briefing
                </button>
