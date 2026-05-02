@@ -188,7 +188,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                         </div>
                       </div>
                       <div className="text-center sm:text-left">
-                         <h4 className="text-lg sm:text-xl font-serif text-white tracking-tight">HARRISH YESURAJ P</h4>
+                         <h4 className="text-lg sm:text-xl font-serif text-white tracking-tight">HARRISH  YESURAJ  P</h4>
                          <p className="text-[9px] sm:text-[10px] text-accent font-black uppercase tracking-[0.2em] mt-1">Full Stack Developer</p>
                          <p className="text-[8px] sm:text-[9px] text-gray-500 font-bold uppercase tracking-widest mt-2">Software & AI Engineer</p>
                       </div>
