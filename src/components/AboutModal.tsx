@@ -23,7 +23,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-2 sm:inset-4 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[700px] sm:max-h-[90dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl"
+            className="fixed inset-x-2 inset-y-6 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[650px] lg:w-[900px] sm:max-h-[85dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl"
           >
             {/* Header */}
             <div className="p-4 sm:p-8 sm:pb-4 flex justify-between items-center border-b border-white/5">
