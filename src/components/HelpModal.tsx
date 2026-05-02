@@ -23,7 +23,7 @@ export function HelpModal({ isOpen, onClose }: HelpModalProps) {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-2 sm:inset-4 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[650px] sm:max-h-[90dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl shadow-accent/20"
+            className="fixed inset-x-2 inset-y-6 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[600px] lg:w-[850px] sm:max-h-[85dvh] bg-[#111111] border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] z-[101] overflow-hidden flex flex-col shadow-3xl shadow-accent/20"
           >
             {/* Header */}
             <div className="p-4 sm:p-8 sm:pb-4 flex justify-between items-center border-b border-white/5">
