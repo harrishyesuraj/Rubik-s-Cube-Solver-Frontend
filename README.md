@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+📌 Rubik’s Cube Solver - Frontend
 
-# Run and deploy your AI Studio app
+A React-based frontend for a Rubik’s Cube Solver application with real-time scanning, manual input, and 3D visualization using Three.js.
 
-This contains everything you need to run your app locally.
+🚀 Tech Stack
+React.js
+HTML5
+CSS3
+Three.js
+Axios (API calls)
+Vercel (Deployment)
+✨ Features
+📷 Live camera-based cube scanning
+🔄 Camera switching & reset controls
+✋ Manual cube color input mode
+🧩 Visual cube state rendering
+🎮 3D Rubik’s Cube visualization (Three.js)
+🔁 Step-by-step solving animation
+🧭 Interactive controls (rotate, zoom, orientation)
+📊 Backend integration for solving logic
+📱 Responsive UI design
+🧠 Workflow
+Scan cube using camera OR input manually
+Send cube state to backend API
+Receive solving steps (JSON response)
+Render solution in 3D cube view
+Animate solving sequence step-by-step
+🌐 Deployment
+Hosted on: Vercel
+Backend API: FastAPI (Render)
+📂 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── scanner/
+ ├── cube3d/
+ ├── services/api.js
+ ├── App.js
 
-View your app in AI Studio: https://ai.studio/apps/3780030d-ae85-4abd-91e6-b41a815cd5c6
+⚙️ Setup
+npm install
+npm start
 
-## Run Locally
+🔗 API Integration
 
-**Prerequisites:**  Node.js
+Backend returns:
 
+{
+  "status": "success",
+  "solution": ["U", "R", "F", "U'", "L2"]
+}
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+📸 Screenshots
+
+(Add your UI images here)
