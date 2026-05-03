@@ -1,72 +1,88 @@
-<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/046f4e40-56d4-47de-9d2e-6a69a070e6f7" />
-
-***
-```markdown
 # 📌 Rubik’s Cube Solver - Frontend
 
-A React-based frontend for a Rubik’s Cube Solver application featuring real-time scanning, manual input, and immersive 3D visualization using Three.js.
+A modern React-based frontend for a Rubik’s Cube Solver application. This project enables real-time cube scanning, manual input, and an interactive 3D visualization using Three.js.
+
+---
 
 ## 🚀 Tech Stack
 
-*   **React.js** - UI framework
-*   **HTML5 & CSS3** - Markup and styling
-*   **Three.js** - 3D rendering and animation
-*   **Axios** - HTTP client for API calls
-*   **Vercel** - Hosting and deployment
+* **React.js**
+* **HTML5**
+* **CSS3**
+* **Three.js**
+* **Axios** (API calls)
+* **Vercel** (Deployment)
+
+---
 
 ## ✨ Features
 
-*   **📷 Live Scanning:** Real-time, camera-based cube scanning.
-*   **🔄 Camera Controls:** Switch between cameras and reset views easily.
-*   **✋ Manual Mode:** Input cube colors manually if scanning is not preferred.
-*   **🧩 State Rendering:** Accurate visual representation of the cube's current state.
-*   **🎮 3D Visualization:** Interactive 3D Rubik’s Cube powered by Three.js.
-*   **🔁 Step-by-Step Animation:** Watch the solve sequence animate move-by-move.
-*   **🧭 Interactive Controls:** Rotate, zoom, and change the orientation of the 3D cube.
-*   **📊 Backend Integration:** Seamless communication with the solving logic API.
-*   **📱 Responsive Design:** Optimized UI for both desktop and mobile devices.
+* 📷 Live camera-based cube scanning
+* 🔄 Camera switching & reset controls
+* ✋ Manual cube color input mode
+* 🧩 Visual cube state rendering
+* 🎮 3D Rubik’s Cube visualization (Three.js)
+* 🔁 Step-by-step solving animation
+* 🧭 Interactive controls (rotate, zoom, orientation)
+* 📊 Backend integration for solving logic
+* 📱 Fully responsive UI
+
+---
 
 ## 🧠 Workflow
 
-1.  **Input State:** Scan the cube using your device's camera OR input the colors manually.
-2.  **Process Data:** Send the current cube state to the backend API.
-3.  **Receive Solution:** Receive the precise solving steps via a JSON response.
-4.  **Visualize:** Render the calculated solution in the 3D cube view.
-5.  **Animate:** Play back the solving sequence step-by-step.
+1. Scan the cube using the camera **OR** input colors manually
+2. Send the cube state to the backend API
+3. Receive solving steps (JSON response)
+4. Render the solution in the 3D cube view
+5. Animate the solving sequence step-by-step
+
+---
 
 ## 🌐 Deployment
 
-*   **Frontend Hosting:** [Vercel](https://vercel.com/)
-*   **Backend API:** FastAPI hosted on [Render](https://render.com/)
+* **Frontend**: Vercel
+* **Backend API**: FastAPI (hosted on Render)
 
-##⚙️ Setup
+---
 
-To run this project locally, follow these steps:
-Clone the repository and navigate to the project directory.
+## ⚙️ Setup Instructions
 
-Install the dependencies:
-Bash
+```bash
+# Install dependencies
 npm install
 
-Start the development server:
-Bash
+# Start development server
 npm start
+```
 
-##🔗 API Integration
+---
 
-The frontend communicates with a FastAPI backend. Below is an example of a successful response when requesting a solution:
+## 🔗 API Integration
 
-Response Format:
+The backend API returns a response in the following format:
 
-JSON
+```json
 {
   "status": "success",
   "solution": ["U", "R", "F", "U'", "L2"]
 }
+```
 
-<img width="1364" height="767" alt="image" src="https://github.com/user-attachments/assets/354d5a3a-b9ff-4b69-8b41-dd42213778f4" />
+* Each move represents a standard Rubik’s Cube notation
+* The frontend parses and animates these moves
 
+---
 
-Live camera scanning interface.
+## 📸 Screenshots
 
-Interactive 3D step-by-step solving animation.
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/b7c065f6-7fc1-418d-9b07-866487899582" />
+
+---
+
+## 📌 Future Improvements
+
+* 🔍 Improve cube detection accuracy
+* ⚡ Optimize 3D rendering performance
+* 🎯 Add solving speed control
+* 🌙 Dark mode UI
