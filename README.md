@@ -1,4 +1,5 @@
-## 📸 Screenshots
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/046f4e40-56d4-47de-9d2e-6a69a070e6f7" />
+
 ***
 ```markdown
 # 📌 Rubik’s Cube Solver - Frontend
@@ -38,32 +39,21 @@ A React-based frontend for a Rubik’s Cube Solver application featuring real-ti
 *   **Frontend Hosting:** [Vercel](https://vercel.com/)
 *   **Backend API:** FastAPI hosted on [Render](https://render.com/)
 
-## 📂 Project Structure
-
-```text
-src/
- ├── components/       # Reusable UI components
- ├── pages/            # Main application pages
- ├── scanner/          # Camera and scanning logic
- ├── cube3d/           # Three.js 3D rendering components
- ├── services/         # API and external service integrations
- │    └── api.js
- └── App.js            # Main application entry point
-
 ##⚙️ Setup
-To run this project locally, follow these steps:
 
+To run this project locally, follow these steps:
 Clone the repository and navigate to the project directory.
 
 Install the dependencies:
-
 Bash
 npm install
-Start the development server:
 
+Start the development server:
 Bash
 npm start
+
 ##🔗 API Integration
+
 The frontend communicates with a FastAPI backend. Below is an example of a successful response when requesting a solution:
 
 Response Format:
@@ -73,8 +63,9 @@ JSON
   "status": "success",
   "solution": ["U", "R", "F", "U'", "L2"]
 }
-📸 Screenshots
-(Replace the placeholder links below with the actual paths to your images)
+
+<img width="1364" height="767" alt="image" src="https://github.com/user-attachments/assets/354d5a3a-b9ff-4b69-8b41-dd42213778f4" />
+
 
 Live camera scanning interface.
 
