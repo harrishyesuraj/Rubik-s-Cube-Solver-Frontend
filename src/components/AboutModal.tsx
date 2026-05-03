@@ -196,7 +196,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                    
                    <div className="grid grid-cols-2 gap-3">
                       <a 
-                        href="www.linkedin.com/in/harrish-yesuraj-p" 
+                        href="https://in.linkedin.com/in/harrish-yesuraj-p" 
                         target="_blank" 
                         rel="noreferrer"
                         className="h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all group"
