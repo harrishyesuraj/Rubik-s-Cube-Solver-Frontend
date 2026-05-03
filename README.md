@@ -85,6 +85,14 @@ The backend API returns a response in the following format:
 
 ---
 
+🎥 Demo Video
+
+Watch the working demo of the Rubik’s Cube Solver:
+
+https://github.com/harrishyesuraj/Rubik-s-Cube-Solver-Frontend/releases/tag/v1.0.0
+
+---
+
 ## 📸 Screenshots
 
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/b7c065f6-7fc1-418d-9b07-866487899582" />
