@@ -50,10 +50,10 @@ A modern React-based frontend for a Rubik’s Cube Solver application. This proj
 
 This project was developed with the assistance of AI tools for:
 
-Code structuring and optimization
-Debugging and problem-solving
-UI/UX improvement suggestions
-Documentation support
+* Code structuring and optimization
+* Debugging and problem-solving
+* UI/UX improvement suggestions
+* Documentation support
 
 ---
 
